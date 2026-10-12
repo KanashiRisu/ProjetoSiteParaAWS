@@ -74,9 +74,29 @@ header {
     width: 100%;
 }
 
-main{
+
+main {
+    max-width: 100vh;
     min-height: 80vh;
+    display: flex;
+    gap: 40px;
+    margin: 25px;
+    justify-self: center;
+
+    .card {
+        width: 300px;
+        height: 350px;
+        background: rgba(255, 70, 85, 0.08);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 70, 85, 0.5);
+        border-radius: 12px;
+        box-shadow: 0 0 10px rgba(255, 70, 85, 0.2);
+
+        color: #ff4655;
+    }
 }
+
 
 footer {
     width: 100%;
