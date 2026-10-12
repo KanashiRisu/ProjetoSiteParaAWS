@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #111116;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 90px;
+    padding: 0 8%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #1a1a22;
+    border-bottom: 3px solid #ff4655;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+
+.logo {
+    color: #ff4655;
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.logo span {
+    color: #ffffff;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.navbar a {
+    position: relative;
+    color: #e5e5e5;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+    &:hover{
+            color: #ff4655;
+    }
+}
+
+.navbar a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+
+    width: 0;
+    height: 2px;
+    background-color: #ff4655;
+
+    transition: width 0.3s ease;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .header {
+        height: auto;
+        min-height: 90px;
+        padding: 20px 5%;
+        flex-direction: column;
+        gap: 22px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .navbar {
+        gap: 25px;
+    }
+
+    .navbar a {
+        font-size: 13px;
+    }
+}
