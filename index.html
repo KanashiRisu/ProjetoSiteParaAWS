@@ -6,20 +6,145 @@
     <title>Valorant Skins</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
-<body>
+<body id="home">
     <header>
-    
-        <menu>
+            <a href="#home" class="logo">VALORANT <span>SKINS</span></a>
 
-        </menu>
+        <input
+            class="skin-search"
+            id="skin-search"
+            type="search"
+            placeholder="Pesquisar skins..."
+            aria-label="Pesquisar skins pelo identificador"
+        >
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#skins">Skins</a>
+            <a href="pages/sobre.html">Sobre</a>
+        </nav>
     </header>
     
     <main>
+        <p class="search-status" id="search-status" role="status" hidden>Nenhum card encontrado para essa pesquisa.</p>
+        <div class="card" id="kuronamiVandal">
+            <div class="foto">
+                <img src="images/kuronami.jpg" alt="kuronami vandal">
+            </div>
+            <h3>Kuronami Vandal</h3>
+            <button class="modal-trigger" type="button" data-modal="modal-kuronami">Ver detalhes</button>
+        </div>
+        <div class="card" id="reaverVandal">
+            <div class="foto">
+                <img src="images/reaver.jpg" alt="reaver vandal">
+            </div>
+            <h3>Reaver Vandal</h3>
+            <button class="modal-trigger" type="button" data-modal="modal-reaver">Ver detalhes</button>
+        </div>
+        <div class="card" id="gaiaVandal">
+            <div class="foto">
+                <img src="images/gaia.jpg" alt="gaia vandal">
+            </div>
+            <h3>Gaia's Vengeance Vandal</h3>
+            <button class="modal-trigger" type="button" data-modal="modal-gaia">Ver detalhes</button>
+        </div>
+        <div class="card" id="ontapPhanton">
+            <div class="foto">
+                <img src="images/onetapP.jpg" alt="onetap phanton">
+            </div>
+            <h3>One Tap Phantom</h3>
+            <button class="modal-trigger" type="button" data-modal="modal-onetap">Ver detalhes</button>
+        </div>
+        <div class="card" id="sentinelaPhanton">
+            <div class="foto">
+                <img src="images/sentinelaP.jpg" alt="sentinela phanton">
+            </div>
+            <h3>Sentinels of Light Phantom</h3>
+            <button class="modal-trigger" type="button" data-modal="modal-sentinels">Ver detalhes</button>
+        </div>
+        <div class="card" id="singularidadePhanton">
+            <div class="foto">
+                <img src="images/singularidadeP.png" alt="singularidade phanton">
+            </div>
+            <h3>Singularity Phantom</h3>
+            <button class="modal-trigger" type="button" data-modal="modal-singularity">Ver detalhes</button>
+        </div>
+        <div class="card" id="nocturnumFaca">
+            <div class="foto">
+                <img src="images/nocturnum.jpg" alt="nocturnum faca">
+            </div>
+            <h3>Nocturnum Knife</h3>
+            <button class="modal-trigger" type="button" data-modal="modal-nocturnum">Ver detalhes</button>
+        </div>
+        <div class="card" id="xenohunterFaca">
+            <div class="foto">
+                <img src="images/xenohunter.jpg" alt="xenohunter faca">
+            </div>
+            <h3>Xenohunter Knife</h3>
+            <button class="modal-trigger" type="button" data-modal="modal-xenohunter">Ver detalhes</button>
+        </div>
+        <div class="card" id="xerofangFaca">
+            <div class="foto">
+                <img src="images/xerofang.jpg" alt="xerofang faca">
+            </div>
+            <h3>Xerofang Knife</h3>
+            <button class="modal-trigger" type="button" data-modal="modal-xerofang">Ver detalhes</button>
+        </div>
 
     </main>
+
+    <dialog class="skin-modal" id="modal-kuronami" aria-labelledby="titulo-kuronami">
+        <h2 id="titulo-kuronami">Kuronami Vandal</h2>
+        <p>Uma Vandal de visual inspirado em água e tempestades, com acabamento fluido e efeitos visuais marcantes ao disparar.</p>
+        <form method="dialog"><button class="modal-close">Fechar</button></form>
+    </dialog>
+    <dialog class="skin-modal" id="modal-reaver" aria-labelledby="titulo-reaver">
+        <h2 id="titulo-reaver">Reaver Vandal</h2>
+        <p>Com estética sombria e detalhes arcanos, a Reaver Vandal transforma cada eliminação em uma experiência cheia de personalidade.</p>
+        <form method="dialog"><button class="modal-close">Fechar</button></form>
+    </dialog>
+    <dialog class="skin-modal" id="modal-gaia" aria-labelledby="titulo-gaia">
+        <h2 id="titulo-gaia">Gaia's Vengeance Vandal</h2>
+        <p>Inspirada na natureza, combina madeira, raízes e energia mística em uma aparência orgânica para a Vandal.</p>
+        <form method="dialog"><button class="modal-close">Fechar</button></form>
+    </dialog>
+    <dialog class="skin-modal" id="modal-onetap" aria-labelledby="titulo-onetap">
+        <h2 id="titulo-onetap">One Tap Phantom</h2>
+        <p>Uma Phantom de visual moderno e vibrante, feita para quem gosta de destacar sua precisão e estilo durante as partidas.</p>
+        <form method="dialog"><button class="modal-close">Fechar</button></form>
+    </dialog>
+    <dialog class="skin-modal" id="modal-sentinels" aria-labelledby="titulo-sentinels">
+        <h2 id="titulo-sentinels">Sentinels of Light Phantom</h2>
+        <p>Com tema de luz e ornamentos elegantes, esta Phantom traz uma presença heroica e efeitos especiais para o combate.</p>
+        <form method="dialog"><button class="modal-close">Fechar</button></form>
+    </dialog>
+    <dialog class="skin-modal" id="modal-singularity" aria-labelledby="titulo-singularity">
+        <h2 id="titulo-singularity">Singularity Phantom</h2>
+        <p>Seu design futurista remete a um buraco negro, com formas geométricas e efeitos visuais de ficção científica.</p>
+        <form method="dialog"><button class="modal-close">Fechar</button></form>
+    </dialog>
+    <dialog class="skin-modal" id="modal-nocturnum" aria-labelledby="titulo-nocturnum">
+        <h2 id="titulo-nocturnum">Nocturnum Knife</h2>
+        <p>Uma faca de aparência sombria e sobrenatural, com linhas dramáticas que combinam com uma coleção de temática noturna.</p>
+        <form method="dialog"><button class="modal-close">Fechar</button></form>
+    </dialog>
+    <dialog class="skin-modal" id="modal-xenohunter" aria-labelledby="titulo-xenohunter">
+        <h2 id="titulo-xenohunter">Xenohunter Knife</h2>
+        <p>De visual tático e futurista, a Xenohunter parece uma ferramenta especializada para rastrear alvos em território desconhecido.</p>
+        <form method="dialog"><button class="modal-close">Fechar</button></form>
+    </dialog>
+    <dialog class="skin-modal" id="modal-xerofang" aria-labelledby="titulo-xerofang">
+        <h2 id="titulo-xerofang">Xerofang Knife</h2>
+        <p>Com acabamento angular e detalhes inspirados em presas, esta faca aposta em um estilo agressivo e marcante.</p>
+        <form method="dialog"><button class="modal-close">Fechar</button></form>
+    </dialog>
     
     <footer>
 
+        <p>
+            © 2026 Valorant Skins. Projeto feito por Murilo E Otavio.
+        </p>
     </footer>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
